@@ -1,0 +1,12 @@
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\obj\Debug\Tungsten.DataAccess.csprojResolveAssemblyReference.cache
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.DataAccess.dll.config
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.DataAccess.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.DataAccess.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.HttpRequests.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.Models.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\XmlParser.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.HttpRequests.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\Tungsten.Models.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\bin\Debug\XmlParser.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\obj\Debug\Tungsten.DataAccess.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.DataAccess\obj\Debug\Tungsten.DataAccess.pdb

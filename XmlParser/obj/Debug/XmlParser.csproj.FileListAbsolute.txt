@@ -1,0 +1,7 @@
+C:\C#Projects\TungstenRssFeeds\XmlParser\bin\Debug\XmlParser.dll
+C:\C#Projects\TungstenRssFeeds\XmlParser\bin\Debug\XmlParser.pdb
+C:\C#Projects\TungstenRssFeeds\XmlParser\bin\Debug\Tungsten.Models.dll
+C:\C#Projects\TungstenRssFeeds\XmlParser\bin\Debug\Tungsten.Models.pdb
+C:\C#Projects\TungstenRssFeeds\XmlParser\obj\Debug\XmlParser.dll
+C:\C#Projects\TungstenRssFeeds\XmlParser\obj\Debug\XmlParser.pdb
+C:\C#Projects\TungstenRssFeeds\XmlParser\obj\Debug\XmlParser.csprojResolveAssemblyReference.cache

@@ -1,0 +1,16 @@
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\obj\Debug\Tungsten.Services.csprojResolveAssemblyReference.cache
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Services.dll.config
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Services.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Services.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.DataAccess.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Models.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.HttpRequests.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\XmlParser.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.DataAccess.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Models.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.HttpRequests.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\XmlParser.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\obj\Debug\Tungsten.Services.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\obj\Debug\Tungsten.Services.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Caching.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Services\bin\Debug\Tungsten.Caching.pdb

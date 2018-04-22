@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TungstenRssFeeds", "TungstenRssFeeds\TungstenRssFeeds.csproj", "{A1417EE8-615E-4D7C-9DFF-A1EEE4F43C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungsten.Caching", "Tungsten.Caching\Tungsten.Caching.csproj", "{D3146293-B40B-40B3-8F30-7718BF140783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungsten.DataAccess", "Tungsten.DataAccess\Tungsten.DataAccess.csproj", "{7980CF9C-33E1-4115-BF19-403216E3C415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungsten.Models", "Tungsten.Models\Tungsten.Models.csproj", "{27B8551B-9549-4ABF-AA48-268EF1CAE5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungsten.HttpRequests", "Tungsten.HttpRequests\Tungsten.HttpRequests.csproj", "{3AAE992C-5FEC-4E26-8A4B-814E70D4ABCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlParser", "XmlParser\XmlParser.csproj", "{8EB7B2D4-EB21-4F7D-801A-D20AD19A9F98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tungsten.Services", "Tungsten.Services\Tungsten.Services.csproj", "{472CBC7F-E773-4CC6-B6CB-96D19A963F6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1417EE8-615E-4D7C-9DFF-A1EEE4F43C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1417EE8-615E-4D7C-9DFF-A1EEE4F43C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1417EE8-615E-4D7C-9DFF-A1EEE4F43C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1417EE8-615E-4D7C-9DFF-A1EEE4F43C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3146293-B40B-40B3-8F30-7718BF140783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3146293-B40B-40B3-8F30-7718BF140783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3146293-B40B-40B3-8F30-7718BF140783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3146293-B40B-40B3-8F30-7718BF140783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7980CF9C-33E1-4115-BF19-403216E3C415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7980CF9C-33E1-4115-BF19-403216E3C415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7980CF9C-33E1-4115-BF19-403216E3C415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7980CF9C-33E1-4115-BF19-403216E3C415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B8551B-9549-4ABF-AA48-268EF1CAE5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B8551B-9549-4ABF-AA48-268EF1CAE5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B8551B-9549-4ABF-AA48-268EF1CAE5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B8551B-9549-4ABF-AA48-268EF1CAE5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAE992C-5FEC-4E26-8A4B-814E70D4ABCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAE992C-5FEC-4E26-8A4B-814E70D4ABCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAE992C-5FEC-4E26-8A4B-814E70D4ABCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAE992C-5FEC-4E26-8A4B-814E70D4ABCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB7B2D4-EB21-4F7D-801A-D20AD19A9F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB7B2D4-EB21-4F7D-801A-D20AD19A9F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB7B2D4-EB21-4F7D-801A-D20AD19A9F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB7B2D4-EB21-4F7D-801A-D20AD19A9F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472CBC7F-E773-4CC6-B6CB-96D19A963F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472CBC7F-E773-4CC6-B6CB-96D19A963F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472CBC7F-E773-4CC6-B6CB-96D19A963F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472CBC7F-E773-4CC6-B6CB-96D19A963F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

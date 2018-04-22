@@ -1,0 +1,5 @@
+C:\C#Projects\TungstenRssFeeds\Tungsten.Caching\bin\Debug\Tungsten.Caching.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Caching\bin\Debug\Tungsten.Caching.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Caching\obj\Debug\Tungsten.Caching.dll
+C:\C#Projects\TungstenRssFeeds\Tungsten.Caching\obj\Debug\Tungsten.Caching.pdb
+C:\C#Projects\TungstenRssFeeds\Tungsten.Caching\obj\Debug\Tungsten.Caching.csprojResolveAssemblyReference.cache
