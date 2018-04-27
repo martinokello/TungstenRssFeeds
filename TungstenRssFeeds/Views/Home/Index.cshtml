@@ -89,9 +89,7 @@
                                 }
 
                                 rssFeedsManager.ScreenPrinter(rssTop10Feeds);
-                                if (rssFeedsManager.globalTimer) {
-                                    clearTimeout(rssFeedsManager.globalTimer);
-                                }
+                                clearTimeout(rssFeedsManager.globalTimer);
                                 rssFeedsManager.globalTimer = setTimeout(rssFeedsManager.initiateRssScrolls, 65000);
                         },
                         error: function (xHRq) {
