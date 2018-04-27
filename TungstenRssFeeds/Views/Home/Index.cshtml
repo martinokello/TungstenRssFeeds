@@ -32,9 +32,6 @@
 
         <script type="text/javascript">
 
-            var myTimed;
-            var writtenToScreen = false;
-
             rssFeedsManager = {
 
                 ScreenPrinter: function (rssTop10Feeds) {
@@ -47,27 +44,33 @@
                     if (indexCarat === rssTop10Feeds[index].Description.length)
                     {
                         $('#scrollingRssFeeds').html("");
-                        clearTimeout(myTimed);
-                        writtenToScreen = false;
                         index++;
                         indexCarat = 0;
-                        if (index < rssTop10Feeds.length)
-                        {
-                            myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
-                        }
                     }
                     else
                     {
                         indexCarat++;
                         var theMessageCarate = (rssTop10Feeds[index].Description.substring(0, indexCarat));
                         $('#scrollingRssFeeds').html(theMessageCarate + '_');
-                        myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
                     }
+                    if (index >= rssTop10Feeds.length) {
+                        $('#scrollingRssFeeds').html("");
+                        rssFeedsManager.clearTimed(myTimed);
+                        return;
+                    }
+
+                    rssFeedsManager.clearTimed(myTimed);
+                    myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
                 }
 
                 writeContent(index,indexCarat,rssTop10Feeds);
 
-               },
+                },
+                clearTimed :function(timer){
+                    if (timer) {
+                        clearTimeout(timer);
+                    }
+                },
                 feedsInit: null,
 
                 initiateRssScrolls: function () {
