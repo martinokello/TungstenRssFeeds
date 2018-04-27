@@ -92,7 +92,7 @@
                                 if (rssFeedsManager.globalTimer) {
                                     clearTimeout(rssFeedsManager.globalTimer);
                                 }
-                                globalTimer = setTimeout(rssFeedsManager.initiateRssScrolls, 60000);
+                                rssFeedsManager.globalTimer = setTimeout(rssFeedsManager.initiateRssScrolls, 65000);
                         },
                         error: function (xHRq) {
                         }
