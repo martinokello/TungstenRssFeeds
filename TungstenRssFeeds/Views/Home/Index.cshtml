@@ -32,40 +32,40 @@
 
         <script type="text/javascript">
 
-            var aryIndex = 0;
             var myTimed;
+            var writtenToScreen = false;
+
             rssFeedsManager = {
 
-                ScreenPrinter: function (data) {
-                var privateData = null;
-                var screenPrinter = this;
-                var index = 0;
-                var messageCarate = '';
+                ScreenPrinter: function (rssTop10Feeds) {
+                    var index = 0;
+                    var indexCarat = 0;
+                    var myTimed = null;
 
-                function FailedMessage(data2) { 
-                }
-
-                function WriteContent(index, messageCarate, theMessage) {
+                    function writeContent(index, indexCarat, rssTop10Feeds) {
                     
-                    if (index === theMessage.Description.length)
+                    if (indexCarat === rssTop10Feeds[index].Description.length)
                     {
-                        messageCarate = "";
-                        $('#scrollingRssFeeds').html(messageCarate)
-                        if (myTimed) {
-                            clearTimeout(myTimed);
+                        $('#scrollingRssFeeds').html("");
+                        clearTimeout(myTimed);
+                        writtenToScreen = false;
+                        index++;
+                        indexCarat = 0;
+                        if (index < rssTop10Feeds.length)
+                        {
+                            myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
                         }
-                        index=0;
                     }
                     else
                     {
-                        index++;
-                        messageCarate = (theMessage.Description.substring(0, index));
-                        $('#scrollingRssFeeds').html(messageCarate + '_');
-                        myTimed = setTimeout(WriteContent, 50, index, messageCarate, theMessage);
+                        indexCarat++;
+                        var theMessageCarate = (rssTop10Feeds[index].Description.substring(0, indexCarat));
+                        $('#scrollingRssFeeds').html(theMessageCarate + '_');
+                        myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
                     }
                 }
 
-                WriteContent(index, messageCarate, data);
+                writeContent(index,indexCarat,rssTop10Feeds);
 
                },
                 feedsInit: null,
@@ -79,22 +79,14 @@
                         contentType: "application/json; charset=utf-8",
                         data: JSON.stringify("http://feeds.bbci.co.uk/news/world/rss.xml"),
                         success: function (dat, status, xHRq) {
-
-                            var messageCarate = '';
-
                                 var rssTop10Feeds = dat.RssFeed.Items;
                                 if (rssTop10Feeds.length > 30) {
                                     rssTop10Feeds = rssTop10Feeds.splice(0, 30);
                                 }
-                                for (var index in rssTop10Feeds) {
-                                    let data = rssTop10Feeds[index];
-                                    if (aryIndex > 0) data = rssTop10Feeds[aryIndex];
-                                    rssFeedsManager.ScreenPrinter(data);
-                                    aryIndex++;
-                                    break;
-                                }
 
-                                setTimeout(rssFeedsManager.initiateRssScrolls,5000);
+                                rssFeedsManager.ScreenPrinter(rssTop10Feeds);
+
+                                setTimeout(rssFeedsManager.initiateRssScrolls,60000);
                         },
                         error: function (xHRq) {
                         }
