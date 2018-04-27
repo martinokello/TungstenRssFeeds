@@ -33,6 +33,7 @@
         <script type="text/javascript">
 
             rssFeedsManager = {
+                globalTimer: null,
 
                 ScreenPrinter: function (rssTop10Feeds) {
                     var index = 0;
@@ -88,8 +89,10 @@
                                 }
 
                                 rssFeedsManager.ScreenPrinter(rssTop10Feeds);
-
-                                setTimeout(rssFeedsManager.initiateRssScrolls,60000);
+                                if (rssFeedsManager.globalTimer) {
+                                    clearTimeout(rssFeedsManager.globalTimer);
+                                }
+                                globalTimer = setTimeout(rssFeedsManager.initiateRssScrolls, 60000);
                         },
                         error: function (xHRq) {
                         }
