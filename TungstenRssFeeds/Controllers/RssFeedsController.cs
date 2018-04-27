@@ -48,7 +48,8 @@ namespace TungstenRssFeeds.Controllers
             }
             catch (Exception ex)
             {
-                return ResponseMessage(Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message));
+                //Log ex stack trace and ex Message
+                return BadRequest("The request could not be handled, contact system Admin");
             }
         }
 
