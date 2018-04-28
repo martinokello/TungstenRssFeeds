@@ -56,12 +56,12 @@
                     }
                     if (index >= rssTop10Feeds.length) {
                         $('#scrollingRssFeeds').html("");
-                        rssFeedsManager.clearTimed(myTimed);
+                        rssFeedsManager.clearTimed(rssFeedsManager.myTimed);
                         return;
                     }
 
-                    rssFeedsManager.clearTimed(myTimed);
-                    myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
+                    rssFeedsManager.clearTimed(rssFeedsManager.myTimed);
+                    rssFeedsManager.myTimed = setTimeout(writeContent, 70, index, indexCarat, rssTop10Feeds);
                 }
 
                 writeContent(index,indexCarat,rssTop10Feeds);
@@ -89,7 +89,7 @@
                                 }
 
                                 rssFeedsManager.ScreenPrinter(rssTop10Feeds);
-                                clearTimeout(rssFeedsManager.globalTimer);
+                                rssFeedsManager.clearTimed(rssFeedsManager.globalTimer);
                                 rssFeedsManager.globalTimer = setTimeout(rssFeedsManager.initiateRssScrolls, 65000);
                         },
                         error: function (xHRq) {
