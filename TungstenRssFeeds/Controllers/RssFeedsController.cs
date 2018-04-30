@@ -41,14 +41,15 @@ namespace TungstenRssFeeds.Controllers
                 var result = cacheStore.GetFromCache(ConfigurationManager.AppSettings["CacheKey"],Int32.Parse(ConfigurationManager.AppSettings["CacheTimeSeconds"]), getFromCache);
                 if (result == null)
                 {
-                    return Ok(new ResponseObject { RssFeed = new RssFeed(), ErrorMessage = "No results got", StatusCode = "200" });
+                    return NotFound();
+                    //return Ok(new ResponseObject { RssFeed = new RssFeed(), ErrorMessage = "No results got", StatusCode = "200" });
                 }
 
                 return Ok(new ResponseObject { RssFeed = result, ErrorMessage = null, StatusCode = "200" });
             }
             catch (Exception ex)
             {
-                //Log ex stack trace and ex Message
+                //Log ex stack trace and ex Message then return bad request
                 return BadRequest("The request could not be handled, contact system Admin");
             }
         }
